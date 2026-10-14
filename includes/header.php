@@ -1,6 +1,3 @@
-<?php
-define('ROOTPATH', $_SERVER['DOCUMENT_ROOT'] . '/indo_rpl/');
-?>
 <!DOCTYPE html>
 <html lang="en">
 
