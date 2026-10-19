@@ -9,7 +9,7 @@ include ROOTPATH . '/includes/header.php';
         <h1>Tambah Kasir</h1>
         <p class="form-subtitle">Isi data kasir baru di bawah ini</p>
 
-        <form action="" method="post">
+        <form action="../../process/cashiers_process.php" method="post">
             <div class="input-group">
                 <label for="nama_kasir">Nama Kasir</label>
                 <input type="text" name="nama_kasir" id="nama_kasir" placeholder="Masukkan nama kasir" required>

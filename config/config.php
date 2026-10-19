@@ -1,5 +1,5 @@
-<? php_check_syntax
-$connection = mysqli_connect("localhost", "root", "", "indo_rpl");
+<?php
+$connection = mysqli_connect("localhost", "root", "", "indomaret_rpl4");
 
 var_dump($connection);
 ?>
