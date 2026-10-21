@@ -10,6 +10,7 @@ include ROOTPATH . '/includes/header.php';
         <p class="form-subtitle">Isi data kasir baru di bawah ini</p>
 
         <form action="../../process/cashiers_process.php" method="post">
+            <input type="hidden" name="action" value="add">
             <div class="input-group">
                 <label for="nama_kasir">Nama Kasir</label>
                 <input type="text" name="nama_kasir" id="nama_kasir" placeholder="Masukkan nama kasir" required>
