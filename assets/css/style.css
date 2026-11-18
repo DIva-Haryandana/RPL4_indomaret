@@ -345,3 +345,77 @@ h2 {
     text-align: center;
     white-space: nowrap;
 }
+
+/* ===== Nota Transaksi ===== */
+.nota-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.nota-card {
+    width: 100%;
+    max-width: 700px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    padding: 28px;
+}
+
+.nota-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.nota-header h1 {
+    color: #D61627;
+    margin-bottom: 4px;
+}
+
+.nota-header p {
+    color: #666;
+    font-size: 14px;
+}
+
+.nota-info {
+    text-align: left;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.nota-info p {
+    margin: 4px 0;
+}
+
+.nota-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 14px;
+}
+
+.nota-table th {
+    background: #D61627;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+.nota-table td {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.nota-footer {
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.nota-footer p {
+    margin: 6px 0;
+}
+
+.nota-actions {
+    margin-top: 20px;
+    text-align: center;
+}
