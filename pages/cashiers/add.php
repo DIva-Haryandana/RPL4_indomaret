@@ -15,8 +15,8 @@ include ROOTPATH . '/includes/header.php';
                 <label for="nama_kasir">Nama Kasir</label>
                 <input type="text" name="nama_kasir" id="nama_kasir" placeholder="Masukkan nama kasir" required>
 
-                <label for="no_telp">Nomor Telepon</label>
-                <input type="tel" name="no_telp" id="no_telp" placeholder="Masukan nomor telepon" required>
+                <label for="no_tlp">Nomor Telepon</label>
+                <input type="tel" name="no_tlp" id="no_tlp" placeholder="Masukan nomor telepon" required>
 
                 <label for="alamat">Alamat</label>
                 <textarea name="alamat" id="alamat" rows="3" placeholder="Masukkan alamat lengkap" required></textarea>
@@ -26,3 +26,7 @@ include ROOTPATH . '/includes/header.php';
         </form>
     </div>
 </div>
+
+<?php
+include ROOTPATH . '/includes/footer.php';
+?>

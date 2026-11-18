@@ -206,6 +206,15 @@ body {
     transform: translateY(-2px);
 }
 
+.btn-danger {
+     background-color: #ef4444;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
 /* ===== Judul ===== */
 h2 {
     text-align: center;
@@ -271,6 +280,7 @@ h2 {
     width: 60px;
 }
 
+
 /* Responsive */
 @media (max-width: 600px) {
     .styled-table th,
@@ -278,4 +288,60 @@ h2 {
         padding: 10px 12px;
         font-size: 13px;
     }
+}
+
+.table-action-header {
+    max-width: 900px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn {
+    display: inline-block !important;
+    padding: 8px 14px !important;
+    border-radius: 6px !important;
+    text-decoration: none !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    border: none !important;
+    cursor: pointer !important;
+    margin: 2px !important;
+}
+
+.btn-primary {
+    background-color: #D61627 !important;
+    color: #fff !important;
+}
+
+.btn-primary:hover {
+    background-color: #b81220 !important;
+    color: #fff !important;
+}
+
+.btn-warning {
+    background-color: #FDC600 !important;
+    color: #333 !important;
+}
+
+.btn-warning:hover {
+    background-color: #e6b400 !important;
+    color: #333 !important;
+}
+
+.btn-danger {
+    background-color: #dc3545 !important;
+    color: #fff !important;
+}
+
+.btn-danger:hover {
+    background-color: #c82333 !important;
+    color: #fff !important;
+}
+
+.styled-table th:last-child,
+.styled-table td:last-child {
+    text-align: center;
+    white-space: nowrap;
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/indomaret_rpl4/assets/css/style.css">
+    <link rel="stylesheet" href="/indo_rpl/assets/css/style.css/">
 </head>
 
 <body>
@@ -14,6 +14,11 @@
 
     include ROOTPATH . '/includes/header.php';
     ?>
+
+
+    <div class="table-action-header">
+        <a href="/indo_rpl/pages/cashiers/add.php" class="btn btn-primary">Tambah Kasir</a>
+    </div>
 
     <h2>Daftar Pengguna Sistem</h2>
 
@@ -25,6 +30,7 @@
                     <th>Nama Kasir</th>
                     <th>No Telepon</th>
                     <th>Alamat</th>
+                    <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
@@ -39,12 +45,20 @@
                     echo "<td>" . htmlspecialchars($row['nama_kasir']) . "</td>";
                     echo "<td>" . htmlspecialchars($row['no_tlp']) . "</td>";
                     echo "<td>" . htmlspecialchars($row['alamat']) . "</td>";
-                    echo "</tr>";
+                    echo "<td>";
+                    echo "<a href='edit.php?id_kasir=" . $row['id_kasir'] . "' class='btn btn-warning'>Edit</a>";
+                    echo " <a href='/indo_rpl/process/cashiers_process.php?action=delete&id_kasir=" . $row['id_kasir'] . "' class='btn btn-danger' onclick=\"return confirm('Apakah Anda yakin ingin menghapus data ini?')\">Hapus</a>";
+                    echo "</td>";
+                echo "</tr>";
                 }
                 ?>
             </tbody>
         </table>
     </div>
+
+    <?php
+        include ROOTPATH . '/includes/footer.php';
+    ?>
 
 </body>
 
